@@ -1,0 +1,254 @@
+
+#wrap{
+    overflow: hidden;
+}
+header .video{}
+header .video video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+header .video .scroll-box{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+}
+header .video .scroll-box div{
+    color: #eee;
+}
+header .video .scroll-box span{
+    display: block;
+    background-color: #707070;
+    width: 5px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+header .video .scroll-box span::after{
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 5px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+    animation: scroll 1.5s infinite;
+    border-radius: 20px;
+}
+@keyframes scroll{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(30px);}
+}
+section{}
+section h2{
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+section .best-container{
+    display: flex;
+    margin-top: 120px;
+    height: 820px;
+    overflow: hidden;
+}
+section .best-product{
+    width: 650px;
+}
+section .best-product h2{
+    font-size: 56px;
+    margin-bottom: 25px;
+}
+section .best-product p{
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+section .best-product .arrow{
+    display: flex;
+    margin-bottom: 120px;
+}
+section .best-product .arrow img{
+    width: 35px;
+    height: 50px;
+    margin-right: 50px;
+}
+section .best_txt .items{
+    margin: -200px 50px 0 0;
+}
+section .best_txt div{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 80px 0 20px 0;
+}
+section .best_txt p{
+    font-size: 20px;
+    font-weight: 400;
+}
+section .best-list{
+    width: 960px;
+    height: 580px;
+    margin-left: 170px;
+}
+section .best-list .items{}
+section .best-list .items .item{
+    position: relative;
+    overflow: hidden;
+}
+section .best-list .items .item .img{
+}
+section .best-list .items .item .img img{
+    width: 400px;
+    height: 580px;
+}
+section .best-list .items .item button{
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    width: 380px;
+    height: 50px;
+    position: absolute;
+    bottom: -150px;
+    left: 10px;
+    transition: 0.5s;
+}
+section .best-list .item:hover button{
+    bottom: 30px;
+}
+
+.issue-container{
+    display: flex;
+    justify-content: space-between;
+}
+.issue-container h2{
+    display: inline-block;
+}
+.issue-container{
+    width: 100%;
+}
+.issue-container .mainimg{
+    width: 35%;
+}
+.issue-container .mainimg:hover .txt p{
+    text-decoration: underline;
+}
+.issue-container .mainimg img{
+    width: 100%;
+    height: 77%;
+}
+.issue-container .mainimg div{
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+.issue-container .mainimg p{
+    font-size: 16px;
+}
+.img-container{
+    width: 65%;
+}
+.img-container ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-container ul li {
+    width: 30%;
+    margin-left: 3%;
+    margin-bottom: 11.7%;
+}
+.img-container ul li img{
+    height: 400px;
+}
+
+.img-container ul li:hover .txt p{
+    text-decoration: underline;
+}
+.img-container ul li:nth-child(1) img{
+    width: 100%;
+    height: auto;
+}
+.img-container ul li:nth-child(2) img{
+    width: 100%;
+    height: auto;
+}
+.img-container ul li:nth-child(3) img{
+    width: 100%;
+    height: auto;
+}
+.img-container ul li:nth-child(4) img{
+    width: 100%;
+    height: auto;
+}
+.img-container ul li:nth-child(5) img{
+    width: 100%;
+    height: auto;
+    margin-top: -27%;
+}
+.img-container ul li:nth-child(6) img{
+    width: 100%;
+    height: auto;
+    margin-top: -63%;
+}
+.img-container ul li div{
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+.img-container ul li p{
+    font-size: 16px;
+}
+
+.colla{
+    height: 1100px;
+    background-color: #000;
+    margin-top: 60px;
+    padding-bottom: 100px;
+}
+.colla h2{
+    color: #fff;
+    padding: 120px 0 40px 160px;
+}
+.colla .colla_box .col_item1{
+    background: url(../img/col_1.png);
+    height: 300px;
+    width: 3000px;
+    animation: roll 15s linear infinite;
+}
+.colla .colla_box .col_item2{
+    background: url(../img/col_2.png);
+    height: 300px;
+    width: 3000px;
+    animation: roll 15s linear infinite;
+    animation-direction: reverse;
+    margin-top: 100px;
+
+}
+
+@keyframes roll{
+    0% {
+        background-position:0px 0px;
+    }
+    100%{
+        background-position: 3000px 0px;
+    }
+}
+
+.colla .c-btn{
+    margin: 0 auto;
+    width: 150px;
+    margin-top: 50px;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    text-align: center;
+}
+.colla button{
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.colla .c-btn:hover button{
+    color: #000;
+    background-color: #fff;
+}
